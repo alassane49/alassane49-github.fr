@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planification - Calendrier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Planification</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="ressources.html">Ressources</a>
+            <a href="community.html">Communauté</a>
+            <a href="pratique.html">Pratique</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Calendrier Interactif</h2>
+            <p>Organisez vos tâches et événements grâce à ce calendrier interactif.</p>
+            <div id="calendar"></div>
+            <div id="event-form">
+                <h3>Ajouter un événement</h3>
+                <form>
+                    <label for="event-date">Date :</label>
+                    <input type="date" id="event-date" required>
+                    <label for="event-desc">Description :</label>
+                    <input type="text" id="event-desc" placeholder="Description de l'événement" required>
+                    <button type="button" id="add-event">Ajouter</button>
+                </form>
+            </div>
+            <div id="event-list">
+                <h3>Liste des événements</h3>
+                <ul></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Plateforme Étudiante - Tous droits réservés</p>
+    </footer>
+    <script src="calendar.js"></script>
+</body>
+</html>
